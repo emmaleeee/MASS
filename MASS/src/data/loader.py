@@ -254,7 +254,7 @@ def load_back_data(params, data):
         )
 
         dataset.remove_empty_sentences()
-        dataset.remove_long_sentences(params.max_len)
+#         dataset.remove_long_sentences(params.max_len)
 
         if params.n_gpu_per_node > 1 and params.split_data:
             n_sent = len(dataset) // params.n_gpu_per_node
